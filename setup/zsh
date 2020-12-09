@@ -12,10 +12,10 @@ if [ $(uname -s) = Linux ]; then
 fi
 
 case $SHELL in
-  *zsh )
+  *zsh)
     ;;
 
-  * )
+  *)
     echo -e '\nChanging shell to zsh...\n'
     sudo usermod -s $(which zsh) $USER
     sudo su - $USER

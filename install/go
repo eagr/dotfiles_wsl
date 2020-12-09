@@ -4,10 +4,10 @@ if [ -z $(command -v go) ]; then
   system=$(uname -s | tr '[:upper:]' '[:lower:]')
   arch=$(uname -m | tr '[:upper:]' '[:lower:]' | tr '-' '_')
   case $arch in
-    x86_64 )  go_arch=amd64;;
-    x86 )     go_arch=386;;
-    armv8 )   go_arch=arm64;;
-    armv6 )   go_arch=armv6l;;
+    x86_64) go_arch=amd64 ;;
+    x86)    go_arch=386 ;;
+    armv8)  go_arch=arm64 ;;
+    armv6)  go_arch=armv6l ;;
   esac
 
   tar_name="go1.15.5.${system}-${go_arch}.tar.gz"
