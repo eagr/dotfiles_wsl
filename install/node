@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ -z $(command -v nvm) ]; then
-  echo -e '\nInstalling nvm...\n'
+  printf '\nInstalling nvm...\n'
   curl -L https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | zsh
   source $HOME/.zshrc
 fi

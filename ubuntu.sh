@@ -29,7 +29,7 @@ done
 cd - > /dev/null
 
 # print results
-echo -e '\nCurrent environment:\n'
+printf '\nCurrent environment:\n'
 echo "http_proxy=${http_proxy}"
 echo "https_proxy=${https_proxy}"
 zsh --version
@@ -37,4 +37,4 @@ go version
 echo "node $(node -v)"
 python3 --version
 pip3 --version
-echo -e '\nAll done.\n'
+printf '\nAll done.\n'

@@ -1,12 +1,12 @@
 #!/bin/sh
 
 if [ $(uname -s) = Linux ]; then
-  echo -e '\nUpgrading packages...\n'
+  printf '\nUpgrading packages...\n'
   sudo apt update
   sudo apt upgrade
 
   if [ -z $(command -v zsh) ]; then
-    echo -e '\nInstalling zsh...\n'
+    printf '\nInstalling zsh...\n'
     sudo apt install zsh
   fi
 fi
@@ -16,7 +16,7 @@ case $SHELL in
     ;;
 
   *)
-    echo -e '\nChanging shell to zsh...\n'
+    printf '\nChanging shell to zsh...\n'
     sudo usermod -s $(which zsh) $USER
     sudo su - $USER
     ;;

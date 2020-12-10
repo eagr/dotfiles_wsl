@@ -13,7 +13,7 @@ if [ -z $(command -v go) ]; then
   tar_name="go1.15.5.${system}-${go_arch}.tar.gz"
   tar_url="https://golang.org/dl/${tar_name}"
 
-  echo -e "\nInstalling Go from ${tar_url} ...\n"
+  printf "\nInstalling Go from ${tar_url} ...\n"
   curl -LO $tar_url
   sudo tar -xzf $tar_name -C /usr/local
   rm $tar_name

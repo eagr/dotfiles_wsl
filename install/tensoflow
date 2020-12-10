@@ -7,10 +7,10 @@ if [ ! -d $tf_env ]; then
   python3 -m venv --system-site-packages $tf_env
   source $tf_env/bin/activate
 
-  echo -e '\nUpgrading pip...\n'
+  printf '\nUpgrading pip...\n'
   pip install --upgrade pip
 
-  echo -e '\nInstalling TensorFlow...\n'
+  printf '\nInstalling TensorFlow...\n'
   pip install --upgrade tensorflow
 
   # deactivate the environment
