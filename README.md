@@ -5,6 +5,7 @@ Personal setup for Ubuntu on WSL 2. Running the scripts will
 * install Go 1.15.5 and Node 14
 * install Python3 dev, pip, and venv
 * install on request
+    * `jl` - JupyterLab
     * `tf` - TensorFlow
 
 ## Usage
@@ -12,6 +13,6 @@ Personal setup for Ubuntu on WSL 2. Running the scripts will
 ```sh
 git clone https://github.com/eagr/dotfiles.git && source dotfiles/ubuntu.sh
 
-# if you need TensorFlow
-git clone https://github.com/eagr/dotfiles.git && source dotfiles/ubuntu.sh tf
+# if you need both TensorFlow and JupyterLab
+git clone https://github.com/eagr/dotfiles.git && source dotfiles/ubuntu.sh tf jl
 ```

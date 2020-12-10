@@ -13,14 +13,17 @@ cp -R -n ./cp/. $HOME
 . install/node
 . install/python
 
+export tf_env=$HOME/tensorflow_env
+
 # install on request
 for arg; do
   software=$arg
   case $software in
+    jl) software=jupyterlab ;;
     tf) software=tensorflow ;;
   esac
 
-  install_script="install/${software}"
+  install_script="install/optional/${software}"
   if [ -x $install_script ]; then
     . $install_script
   fi

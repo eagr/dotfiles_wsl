@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# create a virtual environment if not exist
+if [ ! -d $tf_env ]; then
+  python3 -m venv --system-site-packages $tf_env
+fi
+
+# activate the environment
+source $tf_env/bin/activate
+
+printf '\nUpgrading pip...\n'
+pip install --upgrade pip
+printf '\nInstalling TensorFlow...\n'
+pip install --upgrade tensorflow
+
+# deactivate the environment
+deactivate
