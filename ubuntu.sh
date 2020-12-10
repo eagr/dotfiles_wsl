@@ -13,6 +13,19 @@ cp -R -n ./cp/. $HOME
 . install/node
 . install/python
 
+# install on request
+for arg; do
+  software=$arg
+  case $software in
+    tf) software=tensorflow ;;
+  esac
+
+  install_script="install/${software}"
+  if [ -x $install_script ]; then
+    . $install_script
+  fi
+done
+
 cd - > /dev/null
 
 # print results
