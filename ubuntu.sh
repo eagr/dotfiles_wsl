@@ -1,3 +1,7 @@
+if [ ! "$(uname)" = 'Linux' ]; then
+  exit 0
+fi
+
 set -e
 
 case $BASH_SOURCE in
