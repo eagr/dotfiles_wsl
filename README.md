@@ -1,5 +1,6 @@
 Personal setup for Ubuntu on WSL 2. Running the scripts will
 
+* copy everything in `cp/` to your home directory
 * set the default shell to zsh
 * set the environment variables for HTTP/S proxy
 * install Go 1.15.5 and Node 14

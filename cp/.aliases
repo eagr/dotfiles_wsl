@@ -4,38 +4,38 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # Git
-alias ga="git add"
-alias gap="git add -p"
+alias ga='git add'
+alias gap='git add -p'
 
-alias gb="git branch"
+alias gb='git branch'
 
-alias gc!="git commit --amend"
-alias gcv="git commit -v"
+alias gc!='git commit --amend'
+alias gcv='git commit -v'
 
-alias gco="git checkout"
-alias gcob="git checkout -b"
-alias gcom="git checkout master"
+alias gco='git checkout'
+alias gcob='git checkout -b'
+alias gcom='git checkout master'
 
-alias gd="git diff"
-alias gds="git diff --staged"
+alias gd='git diff'
+alias gds='git diff --staged'
 
-alias gl1="git log --oneline"
-alias gladog="git log --all --decorate --oneline --graph"
+alias gl1='git log --oneline'
+alias gladog='git log --all --decorate --oneline --graph'
 
-alias gpo="git push origin"
-alias gpom="git push origin master"
+alias gpo='git push origin'
+alias gpom='git push origin master'
 
-alias gs="git status"
+alias gs='git status'
 
-alias gsh="git show"
+alias gsh='git show'
 
-alias gst="git stash"
+alias gst='git stash'
 
 # IPFS
-alias ipfscc="ipfs-cluster-ctl"
-alias ipfscf="ipfs-cluster-follow"
-alias ipfscs="ipfs-cluster-service"
+alias ipfscc='ipfs-cluster-ctl'
+alias ipfscf='ipfs-cluster-follow'
+alias ipfscs='ipfs-cluster-service'
 
 # Python
-alias py="python3"
-alias py2="python"
+alias py='python3'
+alias py2='python'

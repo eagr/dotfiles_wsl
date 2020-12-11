@@ -5,12 +5,12 @@ fi
 set -e
 
 case $BASH_SOURCE in
-  *.sh) cwd=$(dirname $BASH_SOURCE) ;;
-  *)    cwd=$(dirname $0) ;;
+  *.sh) cwd="$(dirname $BASH_SOURCE)" ;;
+  *)    cwd="$(dirname $0)" ;;
 esac
 
 # order matters
-cd $cwd
+cd "$cwd"
 cp -R -n ./cp/. $HOME
 . setup/zsh
 . install/go
@@ -23,11 +23,11 @@ export tf_env=$HOME/tensorflow_env
 for arg; do
   software=$arg
   case $software in
-    jl) software=jupyterlab ;;
-    tf) software=tensorflow ;;
+    jl) software='jupyterlab' ;;
+    tf) software='tensorflow' ;;
   esac
 
-  install_script="install/optional/${software}"
+  install_script="install/optional/$software"
   if [ -x $install_script ]; then
     . $install_script
   fi
@@ -37,8 +37,8 @@ cd - > /dev/null
 
 # print results
 printf '\nCurrent environment:\n'
-echo "http_proxy=${http_proxy}"
-echo "https_proxy=${https_proxy}"
+echo "http_proxy=$http_proxy"
+echo "https_proxy=$https_proxy"
 zsh --version
 go version
 echo "node $(node -v)"

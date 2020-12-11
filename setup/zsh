@@ -1,11 +1,11 @@
 #!/bin/sh
 
-if [ $(uname -s) = Linux ]; then
+if [ "$(uname)" = 'Linux' ]; then
   printf '\nUpgrading packages...\n'
   sudo apt update
   sudo apt upgrade
 
-  if [ -z $(command -v zsh) ]; then
+  if [ -z "$(command -v zsh)" ]; then
     printf '\nInstalling zsh...\n'
     sudo apt install zsh
   fi
@@ -17,7 +17,7 @@ case $SHELL in
 
   *)
     printf '\nChanging shell to zsh...\n'
-    sudo usermod -s $(which zsh) $USER
+    sudo usermod -s "$(which zsh)" $USER
     sudo su - $USER
     ;;
 esac
