@@ -1,3 +1,11 @@
+# cd
+alias /='cd /'
+alias ~='cd ~'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
 # ls
 if [ "$(uname)" = 'Darwin' ]; then
   ls_color_flag='-G'
