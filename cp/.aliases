@@ -23,6 +23,9 @@ alias l='ls -F'
 alias la='ls -AF'
 alias ll='ls -alF'
 
+# misc.
+alias path='echo -e ${PATH//:/\\n}'
+
 # Git
 alias ga='git add'
 alias gap='git add -p'
