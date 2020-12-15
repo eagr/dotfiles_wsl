@@ -1,7 +1,14 @@
 # ls
+if [ "$(uname)" = 'Darwin' ]; then
+  ls_color_flag='-G'
+else
+  ls_color_flag='--color'
+fi
+
+alias ls="ls ${ls_color_flag}"
+alias l='ls -F'
+alias la='ls -AF'
 alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
 
 # Git
 alias ga='git add'
