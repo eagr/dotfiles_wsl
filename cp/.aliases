@@ -6,6 +6,11 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
+# grep
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
 # ls
 if [ "$(uname)" = 'Darwin' ]; then
   ls_color_flag='-G'
