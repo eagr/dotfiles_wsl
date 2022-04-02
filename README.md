@@ -12,8 +12,8 @@ Personal setup for Ubuntu on WSL 2. Running the scripts will
 ## Usage
 
 ```sh
-git clone https://github.com/eagr/dotfiles.git && source dotfiles/ubuntu.sh
+git clone https://github.com/eagr/dotfiles_wsl.git && source dotfiles/ubuntu.sh
 
 # if you need both TensorFlow and JupyterLab
-git clone https://github.com/eagr/dotfiles.git && source dotfiles/ubuntu.sh tf jl
+git clone https://github.com/eagr/dotfiles_wsl.git && source dotfiles/ubuntu.sh tf jl
 ```
